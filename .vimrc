@@ -79,6 +79,24 @@
     endif
 " }
 
+" Use vim plug {
+
+    call plug#begin()
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'sbdchd/neoformat'
+    call plug#end() 
+
+    " Use deoplete.
+    let g:deoplete#enable_at_startup = 1
+    " Use neoformat.
+    let g:neoformat_python_autopep8 = {
+            \ 'exe': 'autopep8',
+            \ 'args': ['--aggressive']
+            \ }
+    let g:neoformat_enabled_python = ['autopep8']
+
+" }
+"
 " General {
 
     set background=dark         " Assume a dark background

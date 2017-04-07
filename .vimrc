@@ -84,6 +84,7 @@
     call plug#begin()
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'sbdchd/neoformat'
+    Plug 'vim-airline/vim-airline-themes'
     call plug#end() 
 
     " Use deoplete.
@@ -94,6 +95,8 @@
             \ 'args': ['--aggressive']
             \ }
     let g:neoformat_enabled_python = ['autopep8']
+    " Use airline-themes
+    let g:airline_theme='sierra'
 
 " }
 "

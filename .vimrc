@@ -87,6 +87,7 @@
     Plug 'vim-airline/vim-airline-themes'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/seoul256.vim'
     call plug#end() 
 
     " Use deoplete.
@@ -101,6 +102,9 @@
 
     " Use airline-themes
     let g:airline_theme='sierra'
+
+    " Use seoul256 color
+    let g:seoul256_background = 235
 
 " }
 
@@ -306,13 +310,15 @@
 
 " Vim UI {
 
-    if !exists('g:override_spf13_bundles') && filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
-        let g:solarized_termcolors=256
-        let g:solarized_termtrans=1
-        let g:solarized_contrast="normal"
-        let g:solarized_visibility="normal"
-        color solarized             " Load a colorscheme
-    endif
+"     if !exists('g:override_spf13_bundles') && filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+"         let g:solarized_termcolors=256
+"         let g:solarized_termtrans=1
+"         let g:solarized_contrast="normal"
+"         let g:solarized_visibility="normal"
+"         color solarized             " Load a colorscheme
+"     endif
+
+    colo seoul256
 
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode

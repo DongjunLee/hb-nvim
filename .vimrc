@@ -88,6 +88,8 @@
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/seoul256.vim'
+    Plug 'junegunn/goyo.vim'
+    Plug 'junegunn/limelight.vim'
     call plug#end() 
 
     " Use deoplete.
@@ -105,6 +107,10 @@
 
     " Use seoul256 color
     let g:seoul256_background = 235
+
+    "Use goyo & limelight
+    autocmd! User GoyoEnter Limelight
+    autocmd! User GoyoLeave Limelight!
 
 " }
 

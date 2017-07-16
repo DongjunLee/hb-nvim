@@ -1,22 +1,18 @@
+
+<p align="center">
+  <img src="images/logo.png" width=250>
+</p>
+
 # hb-nvim: HumanBrain's Neovim Distribution
 
-    
-     #   #                           ####           #        
-     #   #                           #   #                   
-     #   # #   # ### ##  ###  ####   #   # ### ###  #  ####  
-     ##### #   # #  #  #    # #   #  ####  #      # #  #   # 
-     #   # #   # #  #  #  ### #   #  #   # #    ### #  #   # 
-     #   # #   # #  #  # #  # #   #  #   # #   #  # #  #   # 
-     #   #  #### #  #  #  ### #   #  ####  #    ### #  #   # 
-    
-
-hb-nvim is a distribution of vim plugins and resources for Vim and Neovim.
+hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with Oh My ZSH.
 
 ## Based on
 
 - [spf13-vim](https://github.com/spf13/spf13-vim)
 - [Neovim](https://github.com/neovim/neovim)
 - [vim plug](https://github.com/junegunn/vim-plug)
+- [Oh My ZSH!](http://ohmyz.sh/)
 
 ## Installation
 
@@ -46,6 +42,34 @@ hb-nvim is a distribution of vim plugins and resources for Vim and Neovim.
   curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   ```
+  
+4. Install Oh My ZSH!
+
+	```bash
+	sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+	```
+  
+## Usages
+
+1. **Cursor**
+
+| key | descripton|
+| --- | --------- |
+| k | 	커서를 위로 움직임 |
+| j | 	커서를 아래로 움직임 |
+| h | 	커서를 왼쪽으로 움직임 |
+| l | 	커서를 오른쪽으로 움직임 |
+| - | 	커서를 줄의 처음으로 옮김 |
+| e, E | 	다음단어의 끝으로, 문자단위 이동 |
+| w, W | 	다음단어의 처음으로, 문자단위 이동 |
+| $ | 	줄의 마지막으로 |
+| 0 | 	줄의 처음으로 |
+| ^ | 	줄의 처음으로(공백이 아닌 처음시작되는 문자) |
+| Shift+g | 	문서의 마지막으로 이동한다. |
+| gg, 1g | 	문서의 처음으로 이동한다. 1대신 다른 숫자를 입력하면 해당 숫자의 라인으로 이동한다. |
+| ), ( | 	다음, 이전 문장의 처음으로 |
+| }, { | 	다음, 이전문단의 처음으로 |
+| ]], [[ | 	다음, 이전 구절의 처음으로 |
 
 ## Plugins
 

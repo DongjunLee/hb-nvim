@@ -7,6 +7,10 @@
 
 hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with Oh My ZSH.
 
+## Requirements
+
+- Vim > 7.4, prefer 8.0
+
 ## Based on
 
 - [spf13-vim](https://github.com/spf13/spf13-vim)
@@ -47,6 +51,14 @@ hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with O
 
 	```bash
 	sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+	```
+	
+5. Install requirements.txt
+
+	- for Python (autopep8, flake8)
+	
+	```bash
+	pip install -r requirements.txt
 	```
   
 ## Usages
@@ -102,6 +114,19 @@ hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with O
 ### [EasyMotion](https://github.com/Lokaltog/vim-easymotion)
 
 ### [Airline](https://github.com/bling/vim-airline)
+
+### [Neoformat](https://github.com/sbdchd/neoformat)
+
+```bash
+" Use neoformat.
+" option - replace : replace the file, instead of updating buffer (default: 0)
+let g:neoformat_python_autopep8 = {
+        \ 'exe': 'autopep8',
+        \ 'args': ['--aggressive', '--max-line-length 120'],
+        \ 'replace': 1,
+        \ }
+let g:neoformat_enabled_python = ['autopep8']
+```
 
 ## Additional Syntaxes
 

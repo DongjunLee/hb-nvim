@@ -28,24 +28,24 @@ hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with O
 
 2. Install Neovim (Stable)
   
-  ```bash
-  $ brew install neovim/neovim/neovim
-  ```
+	```bash
+	$ brew install neovim/neovim/neovim
+	```
 
   Transitioning from Vim
 
-  ```bash
-    mkdir ~/.config
-    ln -s ~/.vim ~/.config/nvim
-    ln -s ~/.vimrc ~/.config/nvim/init.vim
-  ```
+	```bash
+	mkdir ~/.config
+	ln -s ~/.vim ~/.config/nvim
+	ln -s ~/.vimrc ~/.config/nvim/init.vim
+	```
 
 3. Install vim-plug (Neovim)
 
-  ```bash
-  curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  ```
+	```bash
+	curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	```
   
 4. Install Oh My ZSH!
 

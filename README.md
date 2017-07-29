@@ -32,7 +32,7 @@ hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with O
 	$ brew install neovim/neovim/neovim
 	```
 
-  Transitioning from Vim
+	- Transitioning from Vim
 
 	```bash
 	mkdir ~/.config
@@ -131,3 +131,14 @@ let g:neoformat_enabled_python = ['autopep8']
 ## Additional Syntaxes
 
 ## Colorscheme
+
+## Git Hooks
+
+- Python (flake8)
+
+```bash
+flake8 --install-hook git
+
+" if want prevent commit
+git config --bool flake8.strict true
+```

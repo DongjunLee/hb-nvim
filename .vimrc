@@ -96,9 +96,11 @@
     let g:deoplete#enable_at_startup = 1
 
     " Use neoformat.
+    " option - replace : replace the file, instead of updating buffer (default: 0)
     let g:neoformat_python_autopep8 = {
             \ 'exe': 'autopep8',
-            \ 'args': ['--aggressive']
+            \ 'args': ['--aggressive', '--max-line-length 120'],
+            \ 'replace': 1, 
             \ }
     let g:neoformat_enabled_python = ['autopep8']
 

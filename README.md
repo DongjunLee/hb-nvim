@@ -5,7 +5,7 @@
 
 # hb-nvim: HumanBrain's Neovim Distribution
 
-hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with Oh My ZSH.
+**hb-nvim** is a distribution of vim plugins and resources for Vim and `Neovim` with `Oh My ZSH`.
 
 ## Requirements
 
@@ -25,8 +25,22 @@ hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with O
   ```bash
   curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
   ```
+  
+  - move `.vimrc` and `.vimrc.bundles` to $HOME path.
+  
+  ```bash
+  mv .vimrc ~/.
+  mv .vimrc.bundles ~/.
+  ```
+  
+2. Install or Update Plugins
 
-2. Install Neovim (Stable)
+	```bash
+	vim -> :PluginInstall
+	vim -> :PluginUpdate
+	```
+
+3. Install Neovim (Stable)
   
 	```bash
 	$ brew install neovim/neovim/neovim
@@ -40,20 +54,33 @@ hb-nvim is a distribution of vim plugins and resources for Vim and Neovim with O
 	ln -s ~/.vimrc ~/.config/nvim/init.vim
 	```
 
-3. Install vim-plug (Neovim)
+4. Install vim-plug (Neovim)
 
 	```bash
 	curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	```
+	
+	- install [deoplete](https://github.com/Shougo/deoplete.nvim) requirements
+	
+	```bash
+	pip3 install neovim
+	```
+	
+	- Install or Update Plugs
+	
+	``` bash
+	nvim -> :PlugInstall
+	nvim -> :PlugUpgrade
+	```
   
-4. Install Oh My ZSH!
+5. Install Oh My ZSH!
 
 	```bash
 	sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 	```
 	
-5. Install requirements.txt
+6. Install requirements.txt
 
 	- for Python (autopep8, flake8)
 	
